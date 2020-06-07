@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas..com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/contactsFragment">
+
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="dx.queen.truecontactmanager.view.ContactsFragment"
+        android:label="ContactsFragment">
+        <action
+            android:id="@+id/action_contactsFragment_to_detailContactFragment"
+            app:destination="@id/detailContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailContactFragment"
+        android:name="dx.queen.truecontactmanager.view.DetailContactFragment"
+        android:label="DetailContactFragment" >
+    </fragment>
+
+</navigation>
